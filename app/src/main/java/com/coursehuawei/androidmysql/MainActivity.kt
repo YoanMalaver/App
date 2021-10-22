@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         txtPassword=findViewById(R.id.txtPassword)
     }
     fun clickBtnInsertar(view:View){
-        val url="http://192.168.0.6/android_mysql/insertar.php"
+        val url="http://192.168.0.7/android_mysql/insertar.php"
         val queue= Volley.newRequestQueue(this)
         var resultadoPost = object : StringRequest(Request.Method.POST,url,
             Response.Listener<String> { response ->

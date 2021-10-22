@@ -29,7 +29,7 @@ class MainActivity2 : AppCompatActivity() {
         val id=intent.getStringExtra("id").toString()
 
         val queue=Volley.newRequestQueue(this)
-        val url="http://192.168.0.6/android_mysql/registro.php?id=$id"
+        val url="http://192.168.0.7/android_mysql/registro.php?id=$id"
         val jsonObjectRequest = JsonObjectRequest(
             Request.Method.GET,
             url,
